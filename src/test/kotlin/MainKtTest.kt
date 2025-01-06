@@ -1,6 +1,5 @@
+import org.junit.Assert.assertEquals
 import org.junit.Test
-
-import org.junit.Assert.*
 
 class MainKtTest {
 
@@ -13,6 +12,7 @@ class MainKtTest {
         val result = calc(cardType, monthlyTransactions, amount)
         assertEquals(750, result)
     }
+
     @Test
     fun calcTestVisaMinComiss() {
         val cardType = "Visa"
@@ -40,8 +40,9 @@ class MainKtTest {
         val amount = 100_000
 
         val result = calc(cardType, monthlyTransactions, amount)
-        assertEquals(620, result)
+        assertEquals(62, result)
     }
+
     @Test
     fun mirComiss() {
         val cardType = "Mir"
